@@ -1,6 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
 * {
-  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica,'Poppins',sans-serif;
 }
-.h1 {
-  alight-item: center;
+
+html {
+    font-size: 80%;
+    overflow-x: hidden;
 }
+body {
+    margin: 0;
+    font-family: Arial, Helvetica,'Poppins', sans-serif;
+}
+html::-webkit-scrollbar {
+    width: 0.8rem;
+}
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    filter: drop-shadow(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.navbar {
+    background: transparent;
+    margin: 0;
+    padding: 20px 30px;
+    width: 100%;
+}
+.logo {
+    font-size: 14pt;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    width: 10%;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.tombol {
+    display: none;
+    color: white;
+    font-size: 14pt;
+}
+.tombol:hover {
+    cursor: pointer;
+}
+.menu {
+    margin: 0;
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+.menu li {
+    padding-left: 0;
+    margin-right: 10px;
+}
+.menu li a {
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+}
+
+@media screen and (max-width: 768px) {
+    .menu {
+        display: none;
+    }
+    .menu.aktif{
+        display: inline-block;
+        position: absolute;
+        top: 64px;
+        background: #212121;
+        padding: 10px 20px;
+        right: 0;
+        left: 0;
+    }
+
+    .menu.aktif li a {
+        padding: 10px;
+        display: inline-block !important;
+    }
+
+    .tombol {
+        display: block;
+    }
+
+}
+section {
+    background-color: azure;
+    padding: 5rem 9% 5rem;
+}
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+}
+
+.home-img img {
+    width: 32vw;
+    cursor: pointer;
+}
+
+/* Footer */
