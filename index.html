@@ -1,23 +1,43 @@
 <!DOCTYPE html>
-<!-- created by Fikri -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TERSERAH HOME</title>
+    <title>Fikri | Responsive Navbar</title>
     <link rel="stylesheet" href="style.css">
-    <!-- font import -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <h1 position="center">PROYEK WEBSITE TERSERAH HOME</h1>
-    <h3>proyek ini di garap oleh Fikri dan Tim Bosowa Foundation</h3>
-    <h4>Sponsore by </h4>
-    <a href="https://domainesia.com/">Domainesia</a>
-    <a href="https://bosowa.co.id/>Bosowa</a>
-    <img src="terserah.jpg" width="35%">
-    <script src="js/script.js"></script>
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <a href="index.html" class="logo">Etherthink</a>
+                <ul class="menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Tentang</a></li>
+                    <li><a href="#">Produk</a></li>
+                    <li><a href="#">Layanan</a></li>
+                    <li><a href="#">Kontak Kami</a></li>
+                </ul>
+                <div class="tombol">
+                    &#9776;
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="home" id="home">
+        <div class="home-img">
+            <img src="etherbert.png" alt="etherbert" title="etherbert">
+        </div>
+    </section>
+    <div>
+        <center><h2>PROYEK WEB TERSERAH HOME</h2></center>
+    </div>
+    <script type="text/javascript">
+        const tombol = document.querySelector('.tombol');
+        const menu = document.querySelector('.menu');
+        tombol.addEventListener('click', () => {
+            menu.classList.toggle('aktif');
+        });
+    </script>
 </body>
 </html>
